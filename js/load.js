@@ -1,11 +1,11 @@
 // Offline mode
-// if('serviceWorker' in navigator){
-// 	navigator.serviceWorker
-// 		.register('serviceWorker.js')
-// 		.then(() => { 
-// 			console.log('Service Worker Registered');
-// 		});
-// }
+if('serviceWorker' in navigator){
+	navigator.serviceWorker
+		.register('serviceWorker.js')
+		.then(() => { 
+			console.log('Service Worker Registered');
+		});
+}
 
 /* global db */
 // Database holder
