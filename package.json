@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/Zenoo/offline-app-example#readme",
   "dependencies": {
-    "offline-handler": ">=0.0.2"
+    "offline-handler": ">=0.0.3"
   }
 }
