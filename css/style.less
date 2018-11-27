@@ -1,20 +1,38 @@
 body{
 	font-family: sans-serif;
+	background-color: #f1f1f1;
+	color: grey;
 
 	h1{
 		text-align: center;
 	}
 
 	section{
+		padding: 5px;
+
 		.stored{
 			display: flex;
 			flex-wrap: wrap;
+			list-style-type: none;
+			padding-left: 0;
 
 			li{
 				position: relative;
+				-webkit-box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+				-moz-box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+				box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+				border-radius: 20px;
+				padding: 10px;
+				background-color: white;
 
 				p{
 					text-align: center;
+					margin: 5px 0;
+
+					img{
+						max-width: 50px;
+						max-height: 50px;
+					}
 				}
 
 				div{
@@ -25,6 +43,9 @@ body{
 					p{
 						&:first-of-type{
 							font-style: italic;
+							padding-right: 10px;
+							font-size: 10px;
+							line-height: 18px;
 						}
 
 						&:last-of-type{
@@ -34,15 +55,96 @@ body{
 				}
 
 				aside{
-					position: absolute;
-					top: 5px;
-					right: 5px;
 					text-transform: uppercase;
 					font-size: 10px;
 					cursor: pointer;
 
 					&:hover{
 						opacity: 0.8;
+					}
+				}
+
+				&:not(:last-of-type){
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.add-item{
+			text-transform: uppercase;
+			font-size: 10px;
+			cursor: pointer;
+
+			&:hover{
+				opacity: 0.8;
+			}
+
+			&.running{
+				display: none;
+			}
+		}
+
+		&.edit-item{
+			display: none;
+
+			&.active{
+				display: block;
+			}
+
+			form{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				p{
+					label{
+						display: block;
+						font-size: 10px;
+						text-transform: uppercase;
+						margin-bottom: 5px;
+						padding-left: 10px;
+					}
+
+					input{
+						-webkit-box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+						-moz-box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+						box-shadow: 0px 0px 5px 0px rgba(156,156,156,1);
+						border-radius: 20px;
+						padding: 5px 10px;
+						border: 1px solid transparent;
+						background-color: white;
+
+						&:focus{
+							-webkit-box-shadow: 0 0 3pt 2pt #4D90FE;
+							-moz-box-shadow: 0 0 3pt 2pt #4D90FE;
+							box-shadow: 0 0 3pt 2pt #4D90FE;
+							outline: none;
+						}
+
+						&[type="submit"]{
+							&:hover{
+								-webkit-box-shadow: 0 0 3pt 2pt #4D90FE;
+								-moz-box-shadow: 0 0 3pt 2pt #4D90FE;
+								box-shadow: 0 0 3pt 2pt #4D90FE;
+								outline: none;
+								cursor: pointer;
+							}
+						}
+					}
+
+					img{
+						display: none;
+						max-width: 50px;
+						max-height: 50px;
+
+						&:not([src=""]){
+							display: inline;
+							cursor: pointer;
+
+							&+input{
+								display: none;
+							}
+						}
 					}
 				}
 			}
