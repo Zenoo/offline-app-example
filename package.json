@@ -1,0 +1,28 @@
+{
+  "name": "offline-app-example",
+  "version": "0.0.1",
+  "description": "Simple offline page example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zenoo/offline-app-example.git"
+  },
+  "keywords": [
+	"offline",
+	"example",
+	"sample",
+	"serverless",
+	"application"
+  ],
+  "author": "Zenoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zenoo/offline-app-example/issues"
+  },
+  "homepage": "https://github.com/Zenoo/offline-app-example#readme",
+  "dependencies": {
+	  "offline-handler": ">=0.0.2"
+  }
+}

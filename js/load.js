@@ -1,13 +1,11 @@
-/* global db */
+/* global db, OfflineHandler */
 
-// Offline mode
-if('serviceWorker' in navigator){
-	navigator.serviceWorker
-		.register('serviceWorker.js')
-		.then(() => { 
-			console.log('Service Worker Registered');
-		});
-}
+// Offline availability
+new OfflineHandler([
+	'lib/db.js/js/db.min.js',
+	'js/load.js',
+	'css/style.min.css'
+]);
 
 // Database holder
 let server;
@@ -124,7 +122,7 @@ window.addEventListener('load', () => {
 	// Add new item
 	const addButton = document.querySelector('.add-item');
 	
-	addButton.addEventListener('click', e => {
+	addButton.addEventListener('click', () => {
 		const editSection = document.querySelector('.edit-item');
 
 		addButton.classList.add('running');
