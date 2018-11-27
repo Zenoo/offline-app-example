@@ -1,4 +1,4 @@
-# Offline App example ([Offlinehandler](https://github.com/Zenoo/offline-handler) Demo)
+# Offline App example ([OfflineHandler](https://github.com/Zenoo/offline-handler) Demo)
 
 A simple offline-ready page example
 
