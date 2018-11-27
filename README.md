@@ -17,7 +17,7 @@ new OfflineHandler([
 
 * **See**
 
-See the [Offlinehandler](https://github.com/Zenoo/offline-handler) project.
+See the [OfflineHandler](https://github.com/Zenoo/offline-handler) project.
 
 ## Authors
 
