@@ -1,0 +1,21 @@
+{
+	"short_name": "OffApp",
+	"name": "Offline Application",
+	"icons": [
+	  {
+		"src": "/img/logo-192.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	  },
+	  {
+		"src": "/img/logo-512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	  }
+	],
+	"start_url": "/?v=1",
+	"background_color": "#323b44",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#323b44"
+  }

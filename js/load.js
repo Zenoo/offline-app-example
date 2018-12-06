@@ -4,7 +4,8 @@
 new OfflineHandler([
 	'lib/db.js/js/db.min.js',
 	'js/load.js',
-	'css/style.min.css'
+	'css/style.min.css',
+	'js/appInstall.js'
 ]);
 
 // Database holder

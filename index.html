@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#323b44">
 	<title>Offline App Example</title>
+	<link rel="manifest" href="manifest.json">
 	<script src="lib/db.js/js/db.min.js"></script>
 	<script src="https://gitcdn.link/repo/Zenoo/offline-handler/v0.0.3/OfflineHandler.min.js"></script>	
 	<script src="js/load.js"></script>
+	<script src="js/appInstall.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<h1>Complex data storing test</h1>
 	<section>
+		<p class="add-app">
+			<button>Add to Home</button>
+		</p>
 		<h2>Current database:</h2>
 		<ul class="stored">
 		
